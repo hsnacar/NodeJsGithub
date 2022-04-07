@@ -9,11 +9,11 @@
     Projemizi oluşturmak içinse:
 
     Proje için bir klasör oluşturup, macOS ve Linux sistemlerde Terminalde, 
-    Windows'ta CMD'de:, bu klasöre gidip (cd projeklasörü)
+    Windows'ta CMD'de, bu klasöre gidip (cd projeklasörü)
 
             npm init -y 
 
-    komutunu çalıştırıp proje başlangcını tetiklemelisiniz. 
+    komutunu çalıştırıp proje başlangıcını tetiklemelisiniz. 
     Eğer hata alırsanız sudo npm init -y şeklinde deneyebilirsiniz.
     Bu sayede package.json dosyası oluşacaktır.
 
@@ -41,7 +41,7 @@
 const express = require("express");
 // Express modülünü sayfamıza dahil ettik.
 // const sabit tanımlamak için kullanılır.
-// require projeye dışarıda dosya dahil etme metotudur.
+// require projeye dışarıdan dosya dahil etme metotudur.
 
 const server = express();
 // express modulüne erişmek için server sabitini tanımladık.
@@ -52,7 +52,7 @@ server.get('/', (req, res) => {
 // Üstteki üç satırda sitenin, root yani '/' ile açıldığında
 // ziyaretçiye ne gösterileceğini yazdık.
 // get, tarayıcıdaki adres satırında yazan url'ye erişmek içindir.
-// req, gelen istediği yakalamak içindir
+// req, gelen isteği yakalamak içindir
 // res, gelen isteğe verdiğimiz cevaptır
 // (req, res) => { } kullanımı bir arrow function'dır. Bunu araştırıp öğrenmelisiniz.
 // () => { } Bu kullanımı hemen yerde göreceksiniz, ne olduğunu iyice anlamak lazım.
@@ -72,4 +72,5 @@ server.get('/java/:lessonAlias', (req, res) => {
 server.listen(3000, () => {
 });
 // sayfamıza gelen istekleri sunucu bu satırlarla 3000 portunda dinleme başlıyor.
-// port numarasını dilediğimiz şekilde değiştirebilirsiniz
+// port numarasını dilediğimiz şekilde değiştirebilirsiniz.
+
